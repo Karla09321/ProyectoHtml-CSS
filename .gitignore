@@ -1,0 +1,52 @@
+
+# Ignorar archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar carpetas comunes de desarrollo
+node_modules/
+dist/
+build/
+tmp/
+temp/
+.cache/
+.vscode/
+.idea/
+
+# Ignorar archivos de dependencias
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Ignorar logs
+*.log
+npm-debug.log*
+
+# Ignorar archivos de configuración personales
+.env
+.env.local
+.env.*.local
+
+# Ignorar archivos de producción generados
+*.zip
+*.tar.gz
+*.tgz
+
+# Ignorar archivos de salida de editores o compiladores
+*.swp
+*.swo
+
+# Ignorar imágenes de prueba o grandes
+*.psd
+*.ai
+*.sketch
+
+# Opcional: ignorar HTML compilado (si usas un preprocesador como Pug)
+# public/*.html
+
+# Si usas GitHub Pages y tienes una carpeta docs/
+# docs/
+
+# Si usas Netlify o Vercel y generas una carpeta específica
+.netlify/
+.vercel/
