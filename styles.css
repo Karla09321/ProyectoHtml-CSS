@@ -28,7 +28,7 @@ body {
     66% {
         background-image: linear-gradient(
             rgba(103, 79, 79, 0.605),
-            rgba(69, 53, 40, 0.751))
+            rgba(69, 53, 40, 0.751)),
             url(img/IM2.jpg);
     }
     100% {
@@ -59,12 +59,6 @@ body {
     justify-content: space-between;
 }
 
-.Logo {
-    color: rgb(234, 231, 231);
-    font-size: 25px;
-    font-weight: 900;
-}
-
 .navegar ul {
     display: flex;
 }
@@ -88,18 +82,6 @@ body {
     transform: scale(1.1);
 }
 
-#menu {
-    display: none;
-}
-
-.menu-icono {
-    width: 25px;
-}
-
-.menu label {
-    cursor: pointer;
-    display: none;
-}
 
 .header2 {
     text-align: center;
@@ -197,6 +179,35 @@ body {
     transform: scale(1.05); 
 }
 
+
+.toggle {
+    display: none;
+}
+
+.card-content {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-adicional {
+    display: none;
+    text-align: center;
+    color: #5c3e21;
+    font-size: 0.9rem;
+}
+
+.toggle:checked + .card-content .info-adicional {
+    display: block;
+}
+
+.toggle:checked + .card-content .info-principal {
+    display: none;
+}
+
+
 /* Catálogo */
 .catalog {
     display: grid;
@@ -259,35 +270,9 @@ body {
     background-color: #f44336;
 }
 
-.toggle {
-    display: none;
-}
-
-.card-content {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.info-adicional {
-    display: none;
-    text-align: center;
-    color: #5c3e21;
-    font-size: 0.9rem;
-}
-
-.toggle:checked + .card-content .info-adicional {
-    display: block;
-}
-
-.toggle:checked + .card-content .info-principal {
-    display: none;
-}
 
 
-/* Historia */
+/* sobrenoso */
 .general {
     background-color:  #8f7056ca;
     padding: 50px 20px;
